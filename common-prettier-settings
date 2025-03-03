@@ -1,0 +1,34 @@
+install : npm install prettier -D
+  
+Add this to json : "scripts": {"format": "prettier --write .","format-check": "prettier --check ."}
+
+To Forrmet All the files : npm run format
+
+To Check Forrmet All the files : npm run format-check
+  
+Example prettier config   (.......)
+.prettierrc
+{
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "jsxSingleQuote": false,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css"
+}
+Example prettier Ignore config   (.......)
+.prettierignore
+node_modules
+build
+dist
+public
+*.min.js
+package-lock.json
+yarn.lock
+SolidjsApp
+More Options Url That we can Set into Our Project (https://prettier.io/docs/en/options.html)
